@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js5.css">
+    <title>Javascript 5</title>
+</head>
+<body>
+    <h1>Javascript 5</h1>
+
+    <div class="contenedor color-1">
+        <h2>Calculadora</h2>
+        <div class="calculadora">
+            <div class="input-box">
+                <label for="numero-1">Numero 1</label>
+                <input type="number" name="" id="numero-1">
+            </div>
+            <div class="input-box">
+                <label for="numero-1">Operación</label>
+                <select name="signo" id="signo" class="color-3">
+                    <option value='1'>(+)</option>
+                    <option value='2'>(-)</option>
+                    <option value='3'>(*)</option>
+                    <option value='4'>(/)</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="numero-2">Numero 2</label>
+                <input type="number" name="" id="numero-2">
+            </div>
+            <span id="signo-igual"><p>=</p></span>
+            <div class="input-box">
+                <label for="resul">Resultado</label>
+                <input type="number" name="" id="resul">
+            </div>
+        </div>
+        <button class="boton" id="boton-calcular" onclick="calculadora()">Calcular</button>
+    </div>
+
+    <div class="contenedor color-2">
+        <h2>Programa Tablas</h2>
+        <div class="calculadora">
+            <div class="input-box">
+                <label for="tabla">Tabla</label>
+                <input type="text" name="" id="tabla">
+            </div>
+            <div class="input-box">
+                <label for="tipo">Tipo</label>
+                <select name="" id="tipo">
+                    <option value="1">Normal</option>
+                    <option value="2">Inversa</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="long">Longitud</label>
+                <input type="text" name="" id="long">
+            </div>
+        </div>
+        <span id="subtitulo"></span>
+        <table id="tabla-resul">
+        </table>
+        
+        <button class="boton" id="boton-tabla" onclick="generarTabla()">Ver tabla</button>
+        
+    </div>
+
+    <script src="js5.js"></script>
+</body>
+</html>

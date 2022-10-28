@@ -27,6 +27,7 @@ body {
     display: flex;
     flex-direction:initial;
     align-items: center;
+    background-color:rgb(180, 152, 94);
 }
 
 .color-1 {
